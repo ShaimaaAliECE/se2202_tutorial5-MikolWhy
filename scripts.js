@@ -36,13 +36,13 @@ function takeCell(event)
     // Make sure the button is clickable only once (I didn't mention how to do that, look it up :) )
     let eventButton = event.target;
     if(nextPlayer == 'X'){
-        eventButton.innerText = 'X';
+        eventButton.innerText = '[X]';
         eventButton.disabled = true;
         nextPlayer = 'O';
         document.getElementById('next-lbl').innerText = nextPlayer;
     }
     else{
-        eventButton.innerText = 'O';
+        eventButton.innerText = '[O]';
         eventButton.disabled = true;
         nextPlayer = 'X';
         document.getElementById('next-lbl').innerText = nextPlayer;
