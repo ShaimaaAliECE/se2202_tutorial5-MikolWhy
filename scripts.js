@@ -13,7 +13,7 @@ function createGameBoard()
     // Programatically add a button with square brackets enclosing an empty space to each cell in the gameboard
     for (let i = 0; i < 9; i++) {
         let cellName = 'c' + (i+1);
-        let btn = document.createElement('button');
+        let bracketButton = document.createElement('button');
         bracketButton.innerHTML = '[ ]';
         document.getElementById(cellName).appendChild(bracketButton);
     }
