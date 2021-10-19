@@ -14,7 +14,7 @@ function createGameBoard()
     for (let i = 0; i < 9; i++) {
         let cellName = 'c' + (i+1);
         let btn = document.createElement('button');
-        bracketButton.innerHTML = '[]';
+        bracketButton.innerHTML = '[ ]';
         document.getElementById(cellName).appendChild(bracketButton);
     }
 }
